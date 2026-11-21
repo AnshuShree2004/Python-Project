@@ -1,0 +1,18 @@
+import random
+#dice rolling game
+
+#for terminating the game 
+print("Welcome to the dice rolling game!")
+
+
+while True:
+    choice = input("Rolling the dice? y/n: ").lower()
+    if choice == "y":
+        die1 = random.randint(1,6)
+        die2 = random.randint(1,6)
+        print(" Numbers on dice", die1, die2)
+    elif choice == "n":
+        print("Thank you for playing..")
+        break
+    else:
+        print("Invalid choices")
